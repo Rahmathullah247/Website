@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('https://images.pexels.com/photos/3881074/pexels-photo-3881074.jpeg?auto=compress&cs=tinysrgb&w=1200') no-repeat center center fixed;
+    background-size: cover;
+    color: #5D4037;
+    line-height: 1.6;
+    backdrop-filter: blur(2px); 
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for contrast */
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    color: #5C3225;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Darker header  */
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: normal;
+    color: #555; /*lighter dark for contrast */
+}
+
+/* Form Elements */
+form input, 
+form button, 
+textarea, 
+select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #D7CCC8;
+    border-radius: 8px;
+    background-color: #FFF8E1;
+    color: #5D4037;
+    transition: all 0.3s ease;
+}
+
+form input:focus, 
+textarea:focus, 
+select:focus {
+    outline: none;
+    border-color: #A1887F;
+    background-color: #FFECB3;
+}
+
+/* Buttons */
+button {
+    background-color: #B57250; /* Burnt sienna */
+    color: #FFF8E1; /* Pale sand */
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #8C4A2D; /* Deep terracotta */
+}
+
+#loginButton {
+    background-color: #D89A6A; /* Lighter accent */
+}
+
+#loginButton:hover {
+    background-color: #B57250; /* Burnt sienna */
+}
+
+#submitTicketButton {
+    background-color: #C78D58; /* Warm sandstone */
+}
+
+#submitTicketButton:hover {
+    background-color: #8C4A2D; /* Deep terracotta */
+}
+
+#submitTicketButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Ticket Info */
+#ticketFields {
+    margin-top: 20px;
+}
+
+#charCount {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #B57250; /* Warm burnt tone */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #FFE4C1; /* Pale sand color*/
+    color: #5C3225; /* Deep terracotta */
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
