@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern IT Support Ticket System</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- External JavaScript -->
+    <script src="support_ticket.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Laura's IT Support Ticket System</h1>
+
+        <!-- Greeting Message -->
+        <div id="greetingMessage" style="display: none;"></div>
+
+        <!-- Login Form -->
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="userId" placeholder="User ID" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="button" id="loginButton">Login</button>
+            <div id="errorMessage" style="display: none; color: red;">Invalid login attempt.</div>
+        </form>
+
+        <!-- Support Ticket Form -->
+        <h2>Submit a Support Ticket</h2>
+        <form id="supportForm">
+            <label for="reqDate">Request Date:</label>
+            <input type="date" id="reqDate" required>
+
+            <label for="empId">Employee ID:</label>
+            <input type="text" id="empId" placeholder="Enter your ID" required>
+
+            <label for="fName">First Name:</label>
+            <input type="text" id="fName" placeholder="First Name" required>
+
+            <label for="lName">Last Name:</label>
+            <input type="text" id="lName" placeholder="Last Name" required>
+
+            <label for="ticketType">Select Ticket Type:</label>
+            <select id="ticketType" required>
+                <option value="">Select Ticket Type</option>
+                <option value="computer">Computer</option>
+                <option value="software">Software</option>
+                <option value="network">Network</option>
+            </select>
+
+            <div id="ticketFields"></div>
+
+            <h2>Describe Your Issue</h2>
+            <label for="probDesc">Issue Description:</label>
+            <textarea id="probDesc" rows="5" placeholder="Describe your issue..." required></textarea>
+            <div id="charCount">0/200 characters</div>
+
+            <button type="button" id="submitTicketButton">Submit Ticket</button>
+            <div id="formErrorMessage" style="display: none; color: red;">Please fill in all required fields!</div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Laura's IT Support Ticket System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
